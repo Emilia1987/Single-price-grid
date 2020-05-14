@@ -1,0 +1,102 @@
+*{
+    margin-top:0;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    width:100%;
+    margin:0 auto;
+}
+
+/***Thypoghrapy***/
+
+h1{
+    font-size:2rem;
+    font-weight:700;
+    color: hsl(179, 62%, 43%)
+}
+h1 ~ p {
+    color:#bec3cc;
+    line-height: 1.8;
+}
+.intro-subtitle,
+.subcription-subtitle{
+    font-size:1.25rem;
+}
+.intro-subtitle{
+    color:hsl(71, 73%, 54%)
+}
+h1+p{
+    -color: hsl(203, 8%, 57%);
+}
+h2{
+    color:white;
+}
+.subscription-box{
+    background-color:hsl(179, 62%, 43%);
+    color: white;
+}
+.price{
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:1rem;
+}
+.month{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.last-box{
+    background-color:#4abebd ;
+    color:white;
+
+}
+
+/***button**/
+.button{
+    display:inline-block;
+    padding:1rem 2rem;
+    color:white;
+    background-color:#bfdf32;
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+/****Layout****/
+container{
+    display:flex;
+    flex-direction: column;
+}
+.intro,
+.subscription-box,
+.last-box{
+    padding: 2rem;
+    border-radius: 5px;
+
+}
+.last-box>p{
+    margin:0.5rem;
+
+}
+
+
+@media(min-width:375px){
+    container{
+        min-width: 570px;
+        max-width:890px;
+        margin:0 auto;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+    .subscription-box,
+    .last-box{
+        width:50%;
+    }
+}
